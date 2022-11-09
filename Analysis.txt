@@ -1,0 +1,50 @@
+# Run Time Analysis (Worst Case Big-O Notation)
+
+In all cases, let the inputs `calls` and `texts` be defined by `c` and `t` respectively. These are both lists of lists of strings. Run Time Analysis will depend on the length of these two variables.
+
+Worst Case Approximations shall be used.
+
+## task0.py
+
+$O(1)$. 
+Order is 1.
+The length of `c` and `t` have no impact on the number of operations.
+
+
+## task1.py
+
+$O(c + t)$.
+Order is linear.
+The length of `c` and `t` both have a linear impact on the number of operations. 
+There is an un-nested loop ran for each variable with no effect on each other.
+
+
+## task2.py
+
+$O(c)$.
+Order is linear.
+The length of `c` has a linear impact on the number of operations, but the length of `t` has no impact.
+There is one un-nested loop for the variable `calls`,
+with some logical operators that have no effect on the time complexity.
+
+
+## task3.py
+
+$O(c)$.
+Order is linear.
+The length of `c` has a linear impact on the number of operations, but the length of `t` has no impact.
+There is one loop for the variable `calls`, with some logical operators that have no effect on the time complexity.
+Although there is a nested loop ran on one string within each list, this also has a linear order on the time complexity.
+The code responsible for rounding the percentage does not impact the number of operations.
+The overall approximated time complexity is therefore of linear order.
+
+
+## task4.py
+
+$O(c + t)$.
+Order is linear.
+The length of `c` and `t` both have a linear impact on the number of operations.
+There are two un-nested loops for the `calls` variable and one un-nested loop for the `texts` variable.
+These loops produce one more variable which is looped with a logical boolean expression, but this also has a linear impact
+(adding an extra item to one of the variables will add an extra iterable item to this new variable in the worst case scenario).
+The overall approximated time complexity is therefore of linear order.
