@@ -1,3 +1,6 @@
 calls.csv
 texts.csv
 RUNTIME_ANALYSIS.md
+.dccache
+.vscode
+.DS_Store
